@@ -1,0 +1,77 @@
+/*==================== Colours ====================*/
+:root{
+    /* Colours */
+    --main-primary: #e79a7d;
+    --main-tertiary: #bc6b34;
+    --main-secondary: #95E77D;
+    --main-light: #fdf7f7;
+    --main-dark: #333;
+    --main-mid: #a9a9a9;
+
+    /* Hovers */
+    --primary-hover: #7DE7CF;
+
+    /* Borders */
+    --standard-border: 2px;
+
+    /* Transitions */
+    --standard-transition: .2s ease-in-out;
+}
+
+
+/*==================== Nav list ====================*/
+.main-nav{
+
+}
+
+.nav-list{
+    list-style: none;
+}
+.nav-list-item{
+    display: inline;
+    flex: 1;
+    text-align: center;
+}
+
+.nav-list-item:hover{
+    cursor: pointer;
+}
+
+
+.nav-link-custom{
+    cursor: default;
+    transition: var(--standard-transition);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    color: var(--main-light) !important;
+}
+
+.nav-link-custom:hover{
+    cursor: pointer;
+    text-decoration: none;   
+}
+
+
+/* ==================== Horizontal rules ====================*/
+.hr-tertiary{
+    height: 2px;
+    background-color: var(--main-primary );
+    color: var(--main-second);
+}
+
+
+/* ==================== Showcase ==================== */
+
+#showcase{
+    background-image: url("../img/Banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+}
+
+.social-link{
+    transition: var(--standard-transition);
+}

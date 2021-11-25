@@ -1,0 +1,323 @@
+/* Colours */
+:root{
+    /* Colours */
+    --main-primary: #e79a7d;
+    --main-tertiary: #bc6b34;
+    --main-secondary: #95E77D;
+    --main-light: #fdf7f7;
+    --main-dark: #333;
+    --main-mid: #a9a9a9;
+
+    /* Hovers */
+    --primary-hover: #7DE7CF;
+
+    /* Borders */
+    --standard-border: 2px;
+
+    /* Transitions */
+    --standard-transition: .2s ease-in-out;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Utility */
+.bg-tertiary{
+    background-color: var(--main-tertiary);
+}
+.bg-main{
+    background-color: var(--main-primary);
+}
+.bg-second{
+    background-color: var(--main-second);
+}
+.bg-light{
+    background-color: var(--main-light);
+}
+.bg-dark{
+    background-color: var(--main-dark);
+}
+.bg-mid{
+    background-color: var(--main-mid);
+}
+
+.btn-tertiary:hover{
+    background-color: var(--main-tertiary);
+}
+.btn-main:hover{
+    background-color: var(--main-primary);
+}
+.btn-second:hover{
+    background-color: var(--main-second);
+}
+
+.text-tertiary{
+    color: var(--main-tertiary);
+}
+.text-main{
+    color: var(--main-primary);
+}
+.text-secondary{
+    color: var(--main-secondary);
+}
+.text-light-custom{
+    color: var(--main-light) !important;
+}
+
+.border-tertiary{
+    border-color: var(--main-tertiary) !important;
+}
+.border-main{
+    border-color: var(--main-primary) !important;
+}
+.border-second{
+    border-color: var(--main-secondary) !important;
+}
+.border-mid{
+    border-color: var(--main-mid) !important;
+}
+
+/* ==================== spacers ==================== */
+.whole-screen-spacer{
+    height: 90vh;
+    width: 100%;
+}
+
+.section-spacer{
+    height: 5vh;
+}
+
+/* Widths */
+.w-5{
+    width: 5%;
+}
+.w-10{
+    width: 10%;
+}
+.w-15{
+    width: 15%;
+}
+.w-17-5{
+    width: 17.5%;
+}
+.w-20{
+    width: 20%;
+}
+.w-30{
+    width: 30%;
+}
+.w-40{
+    width: 40%;
+}
+.w-45{
+    width: 45%;
+}
+.w-50{
+    width: 50%;
+}
+.w-60{
+    width: 60%;
+}
+.w-70{
+    width: 70%;
+}
+.w-80{
+    width: 80%;
+}
+.w-85{
+    width: 88.5%;
+}
+.w-90{
+    width: 90%;
+}
+
+.w-97{
+    width: 97%;
+}
+
+
+
+/* Heights */
+.h-5{
+    height: 5vh;
+}
+.h-10{
+   height: 10vh; 
+}
+.h-15{
+   height: 15vh; 
+}
+.h-20{
+   height: 20vh; 
+}
+.h-30{
+   height: 30vh; 
+}
+.h-40{
+   height: 40vh; 
+}
+.h-50{
+   height: 50vh; 
+}
+.h-60{
+   height: 60vh; 
+}
+.h-70{
+   height: 70vh; 
+}
+.h-80{
+   height: 80vh; 
+}
+.h-85{
+   height: 80vh; 
+}
+.h-90{
+   height: 90vh; 
+}
+.h-100{
+   height: 100vh; 
+}
+
+/* Top alignement */
+.top-2-5{
+    top: 2.5%;
+}
+.top-5{
+    top: 5%;
+}
+.top-7-5{
+    top: 7.5%;
+}
+.top-10{
+    top: 10%;
+}
+.top-20{
+    top: 20%;
+}
+.top-30{
+    top: 30%;
+}
+.top-40{
+    top: 40%;
+}
+.top-50{
+    top: 50%;
+}
+.top-60{
+    top: 60%;
+}
+.top-70{
+    top: 70%;
+}
+.top-80{
+    top: 80%;
+}
+.top-90{
+    top: 90%;
+}
+.top-100{
+    top: 100%;
+}
+
+
+/* Shadow */
+.shadow{
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+}
+
+.shadow-orange{
+    box-shadow: 5px 5px 5px rgba(188, 107, 52, 0.4);
+}
+
+.text-shadow-orange{
+    text-shadow: 2px 2px 3px #bc6b34;
+}
+
+
+
+/* ==================== Overlay's ==================== */
+.overlay-container{
+    position: relative;
+}
+/* Slide left */
+.overlay-slide-left{
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: var(--main-primary );
+    overflow: hidden;
+    width: 0;
+    min-height: 100%;
+    transition: .5s ease;
+    opacity: 0.7;
+}
+.overlay-container:hover .overlay-slide-left{
+    width: 100%;
+    left: 0;
+}
+.overlay-slide-text-left{
+    color: var(--main-dark);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+/* Slide right */
+.overlay-slide-right{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--main-primary);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+    opacity: 0.7;
+}
+.overlay-container:hover .overlay-slide-right{
+    width: 100%;
+}
+.overlay-slide-text-right{
+    color: var(--main-dark);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+
+
+/* ==================== logo ==================== */
+/* logo spacer */
+.logo-spacer{
+    width: 50%;
+    transform: rotate(-20deg);
+    opacity: 0.5;
+}
+
+
+
+/* ==================== Hovers ==================== */
+.hover-secondary:hover{
+    transition: var(--standard-transition) ;
+    color: var(--primary-hover) !important;
+}
+.hover-tertiary:hover{
+    transition: var(--standard-transition) ;
+    color: var(--main-tertiary) !important;
+}
+.hover-primary:hover{
+    transition: var(--standard-transition) ;
+    color: var(--main-primary) !important;
+}
