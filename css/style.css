@@ -65,11 +65,11 @@
 /* ==================== Showcase ==================== */
 
 #showcase{
-    background-image: url("../img/Banner.jpg");
+    background-image: url("../img/Banner_Large_NoLogo.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 70vh;
+    min-height: 85vh;
 }
 
 .social-link{
