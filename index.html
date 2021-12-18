@@ -2,508 +2,557 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <!-- Meta tags for site information -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords" content="Rollerskate, Lessons, Brisbane">
-  <meta name="author" content="Layla Anderson, Paige Maguire">
-  <meta name="description" content="Rollerskate lessons">
+    <!-- Meta tags for site information -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Rollerskate, Lessons, Brisbane">
+    <meta name="author" content="Layla Anderson, Paige Maguire">
+    <meta name="description" content="Rollerskate lessons">
 
-  <!-- Link bootstrap css sheet -->
-  <!-- Link style sheets -->
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/utility.css">
-  <!-- Font awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <!-- ==================== Scripts ==================== -->
 
-  <title>Wobbly Wheels | Skating Lessons</title>
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- Link bootstrap css sheet -->
+    <!-- Link style sheets -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/utility.css">
+
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="./css/mobile.css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+    <title>Wobbly Wheels | Skating Lessons</title>
 
 </head>
 
-<body class="bg-dark">
-
-  <!-- Brand Bar - above nav bar with logo etc. -->
-  <div id="brand-bar" class="w-100 h-15 d-flex bg-main d-flex justify-content-end sticky-top shadow">
-
-    <!-- Navigation -->
-    <nav id="main-nav" class="w-100 h-15 d-flex bg-main justify-content-center align-items-center">
-      <ul class="nav-list w-100 d-flex h-5">
-        <li class="nav-list-item h3 d-flex justify-content-center w-100 m-0">
-          <a id='meet-the-team-btn' class="text-shadow-orange w-100 m-0 p-0 py-3 nav-link-custom hover-secondary">
-            Meet the Team
-          </a>
-        </li>
-        <li class="nav-list-item h3 d-flex justify-content-center w-100 m-0">
-          <a id='age-groups-btn' class="text-shadow-orange w-100 m-0 p-0 py-3 nav-link-custom hover-secondary">
-            Age Groups
-          </a>
-        </li>
-        <li class="nav-list-item h3 d-flex justify-content-center w-100 m-0">
-          <a id='classes-btn' class="text-shadow-orange w-100 m-0 p-0 py-3 nav-link-custom hover-secondary">
-            Classes
-          </a>
-        </li>
-        <li class="nav-list-item h3 d-flex justify-content-center w-100 m-0">
-          <a id='safety-btn' class="text-shadow-orange w-100 m-0 p-0 py-3 nav-link-custom hover-secondary">
-            Safety
-          </a>
-        </li>
-        <li class="nav-list-item h3 d-flex justify-content-center w-100 m-0">
-          <a id='contact-us-btn' class="text-shadow-orange w-100 m-0 p-0 py-3 nav-link-custom hover-secondary">
-            Contact Us
-          </a>
-        </li>
-        <li class="nav-list-item h3 d-flex justify-content-center w-100 m-0">
-          <a id='gallery-btn' class="text-shadow-orange w-100 m-0 p-0 py-3 nav-link-custom hover-secondary">
-            Gallery
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <div id="socials" class="d-flex flex-column justify-content-center w-5">
-      <a href="https://www.instagram.com/wobblywheels.lessons/"
-        class="h2 text-center text-light-custom text-shadow-orange hover-secondary social-link">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://www.facebook.com/wobblywheels.lessons"
-        class="h2 text-center text-light-custom text-shadow-orange hover-secondary social-link">
-        <i class="fab fa-facebook-square"></i>
-      </a>
-      <a href="mailto:Wobblywheels.lessons@gmail.com"
-        class="h2 text-center text-light-custom text-shadow-orange hover-secondary social-link">
-        <i class="fas fa-envelope"></i>
-      </a>
+<body class="bg-dark" id="main-body">
+    <!-- Button to scroll to the top of the page -->
+    <div class="bg-main-light text-light shadow" id="scroll-top">
+        <i class="fa fa-arrow-up"></i>
     </div>
-    <!-- Brand -->
-    <img src="./img/Logo - Text aside.jpg" alt="Logo" id="logo-main" class="">
+    <!-- Nav and brand bar -->
+    <header class="bg-main">
+        <div id="brand-bar" class="d-flex justify-content-center">
+            <img src="./img/Logo - Text aside.jpg" alt="Logo" id="top-brand">
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-main-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 w-100">
 
+                    <li class="nav-list-item h3 d-flex justify-content-center w-100 m-0">
+                        <a id='meet-the-team-btn'
+                            class="text-shadow-orange w-100 m-0 p-0 py-3 nav-link-custom hover-secondary">
+                            The Team
+                        </a>
+                    </li>
+                    <li class="nav-list-item h3 d-flex justify-content-center w-100 m-0">
+                        <a id='age-groups-btn'
+                            class="text-shadow-orange w-100 m-0 p-0 py-3 nav-link-custom hover-secondary">
+                            Age Groups
+                        </a>
+                    </li>
+                    <li class="nav-list-item h3 d-flex justify-content-center w-100 m-0">
+                        <a id='classes-btn'
+                            class="text-shadow-orange w-100 m-0 p-0 py-3 nav-link-custom hover-secondary">
+                            Classes
+                        </a>
+                    </li>
+                    <li class="nav-list-item h3 d-flex justify-content-center w-100 m-0">
+                        <a id='safety-btn'
+                            class="text-shadow-orange w-100 m-0 p-0 py-3 nav-link-custom hover-secondary">
+                            Safety
+                        </a>
+                    </li>
+                    <li class="nav-list-item h3 d-flex justify-content-center w-100 m-0">
+                        <a id='contact-us-btn'
+                            class="text-shadow-orange w-100 m-0 p-0 py-3 nav-link-custom hover-secondary">
+                            Contact Us
+                        </a>
+                    </li>
+                    <li class="nav-list-item h3 d-flex justify-content-center w-100 m-0">
+                        <a id='gallery-btn'
+                            class="text-shadow-orange w-100 m-0 p-0 py-3 nav-link-custom hover-secondary">
+                            Gallery
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-  </div>
-
-
-
-  <!-- Content -->
-  <!-- Showcase -->
-  <div class="showcase-wrapper">
-    <div class="showcase w-100 bottom-0 m-0  d-flex flex-column justify-content-center" id="showcase">
-      <!-- Showcase content here -->
-
-      <!-- <div class="display-1 container text-center my-auto">Hello there <br>General Kenobi</div> -->
-
+    <!-- Showcase - Hidden on mobile devices -->
+    <div class="showcase-wrapper">
+        <div id="showcase" class="w-100">
+            <img alt="Banner" id="showcase-banner">
+        </div>
     </div>
 
-  </div>
+    <!-- Section spacer -->
+    <div class="section-spacer"></div>
 
-  <!-- Beginning of content -->
-  <!-- Space content past absolute element (showcase) -->
+    <!-- Content -->
+    <div id="content-wrapper">
 
-  <div class="section-spacer"></div>
+        <!-- Meet the team -->
+        <div id="meet-the-team" class="d-flex flex-column justify-content-center mt-4">
+            <div class="bg-main w-85 rounded mx-auto shadow d-flex justify-content-around">
+                <div class="h1 text-light text-shadow-orange">
+                    Meet the Team
+                </div>
+            </div>
+            <!-- Paige -->
+            <div class="bg-light mx-auto shadow w-85 d-flex justify-content-around py-4 mt-4 rounded">
 
-  <!-- Meet the team -->
-  <div id="meet-the-team" class="d-flex flex-column justify-content-center mt-4">
-    <div class="bg-main w-85 rounded mx-auto shadow d-flex justify-content-around">
-      <div class="h1 text-light text-shadow-orange">
-        Meet the Team
-      </div>
-    </div>
-    <!-- Paige -->
-    <div class="bg-light mx-auto shadow w-85 d-flex justify-content-around py-4 mt-4 rounded">
-      <div class="d-inline-block w-25 pr-4 d-flex justify-content-center">
-        <img src="./img/Paige-cropped.png" alt="Rollerskates" width="510" height="400" class="rounded">
-      </div>
-      <div class="w-15 d-flex justify-content-center">
-        <img src="./img/Logo - Transparent.jpeg" alt="logo placeholder" class="logo-spacer align-self-center img-fluid">
-      </div>
-      <div class="card-content w-45 pr-4">
-        <h3>Paige Maguire</h3>
-        <h4>{Title}</h4>
-        <hr class="hr-tertiary">
-        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius placeat vero ex sapiente. Facere
-          tempora quod
-          quae natus a in adipisci error et eaque repudiandae. Doloremque placeat dicta facilis cum, nulla incidunt
-          voluptas deserunt, voluptatum molestiae cumque exercitationem vitae ex.</p>
-        <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia quae quidem eveniet quibusdam
-          nisi
-          assumenda atque exercitationem vel error commodi, nobis suscipit nulla quas vitae alias ipsam consequuntur,
-          velit facilis culpa corporis, ex numquam minus aspernatur perspiciatis? Ullam reprehenderit totam animi ipsam
-          harum iste odit laudantium, veniam temporibus? Dolor, necessitatibus?</p>
-      </div>
-    </div>
-    <!-- Layla -->
-    <div class="bg-light mx-auto shadow w-85 d-flex justify-content-around py-4 mt-4 rounded">
-      <div class="card-content w-45">
-        <h3>Layla Anderson</h3>
-        <h4>{Title}</h4>
-        <hr class="hr-tertiary">
-        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius placeat vero ex sapiente. Facere
-          tempora quod
-          quae natus a in adipisci error et eaque repudiandae. Doloremque placeat dicta facilis cum, nulla incidunt
-          voluptas deserunt, voluptatum molestiae cumque exercitationem vitae ex.</p>
-        <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla est quas aliquid asperiores
-          voluptatibus
-          explicabo ipsum debitis iusto eius quibusdam voluptas fugiat eligendi nihil hic dicta soluta, mollitia tenetur
-          animi a saepe, labore sequi atque? Laboriosam, omnis illum suscipit error voluptatibus non vel, ut fugiat ipsa
-          laudantium cum porro deserunt.</p>
-      </div>
-      <div class="w-15 d-flex justify-content-center">
-        <img src="./img/Logo - Transparent.jpeg" alt="logo placeholder" class="logo-spacer align-self-center img-fluid">
-      </div>
-      <div class="d-inline-block w-25 pr-4 d-flex justify-content-center">
-        <img src="./img/Layla-cropped.jpg" alt="Rollerskates" width="510" height="400" class="rounded">
-      </div>
-    </div>
-    <!-- Hamish -->
-    <div class="bg-light mx-auto shadow w-85 d-flex justify-content-around py-4 mt-4 rounded">
-      <div class="d-inline-block w-25 pr-4 d-flex justify-content-center">
-        <img src="./img/Ham-cropped.jpg" alt="Rollerskates" width="510" height="400" class="rounded">
-      </div>
-      <div class="w-15 d-flex justify-content-center">
-        <img src="./img/Logo - Transparent.jpeg" alt="logo placeholder" class="logo-spacer align-self-center img-fluid">
-      </div>
-      <div class="card-content w-45 pr-4">
-        <h3>Hamish Maguire</h3>
-        <h4>{Title}}</h4>
-        <hr class="hr-tertiary">
-        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius placeat vero ex sapiente. Facere
-          tempora quod
-          quae natus a in adipisci error et eaque repudiandae. Doloremque placeat dicta facilis cum, nulla incidunt
-          voluptas deserunt, voluptatum molestiae cumque exercitationem vitae ex.</p>
-        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, officia. Officia laborum esse
-          praesentium
-          ipsum, eaque itaque consectetur. Quam officiis accusantium itaque asperiores repellat pariatur molestias ex
-          eos laudantium adipisci quo, tenetur optio voluptas dolores ea saepe totam, similique inventore nihil
-          reprehenderit. Recusandae minus totam doloribus, corporis in similique voluptatibus.</p>
-      </div>
-    </div>
+                <div class="card-content p-4">
+                    <div class="card-header-wrapper">
+                        <div class="card-title-wrapper">
+                            <h3>Paige Maguire</h3>
+                            <h4>{Title}</h4>
+                            <hr class="hr-tertiary mobile-hr">
+                        </div>
+                        <!-- Picture - change to display block on mobile -->
+                        <img src="./img/Paige-cropped.png" alt="Paige on coping"
+                            class=" rounded img-fluid meet-card-img">
+                    </div>
 
-  </div>
-  <div class="section-spacer"></div>
-  <!-- Age groups -->
-  <div id="age-groups" class="d-flex flex-column justify-content-center">
-    <div class="bg-main w-85 rounded mx-auto shadow d-flex justify-content-around">
-      <div class="h1 text-light text-shadow-orange">
-        Age Groups
-      </div>
-    </div>
-    <div class="w-85 mx-auto py-3 d-flex justify-content-between" id="age-group-card-holder">
-      <div class="card w-17-5 p-2 d-inline-block shadow">
-        <img class="card-img-top" src="./img/TestPhoto.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">7 and below</h5>
-          <hr class="hr-tertiary">
-          <p class="card-text">Classes that are available</p>
+                    <hr class="hr-tertiary">
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius placeat vero ex
+                        sapiente. Facere
+                        tempora quod
+                        quae natus a in adipisci error et eaque repudiandae. Doloremque placeat dicta facilis cum, nulla
+                        incidunt
+                        voluptas deserunt, voluptatum molestiae cumque exercitationem vitae ex.</p>
+                    <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia quae quidem
+                        eveniet quibusdam
+                        nisi
+                        assumenda atque exercitationem vel error commodi, nobis suscipit nulla quas vitae alias ipsam
+                        consequuntur,
+                        velit facilis culpa corporis, ex numquam minus aspernatur perspiciatis? Ullam reprehenderit
+                        totam animi ipsam
+                        harum iste odit laudantium, veniam temporibus? Dolor, necessitatibus?</p>
+                </div>
+            </div>
+            <!-- Layla -->
+            <div class="bg-light mx-auto shadow w-85 d-flex justify-content-around py-4 mt-4 rounded">
+                <div class="card-content p-4">
+                    <div class="card-header-wrapper">
+                        <div class="card-title-wrapper">
+                            <h3>Layla Anderson</h3>
+                            <h4>{Title}</h4>
+                            <hr class="hr-tertiary mobile-hr">
+                        </div>
+
+                        <!-- Picture - change to display block on mobile -->
+                        <img src="./img/Layla-cropped.jpg" alt="Layla doing a trick"
+                            class=" rounded img-fluid meet-card-img">
+                    </div>
+                    <hr class="hr-tertiary">
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius placeat vero ex
+                        sapiente. Facere
+                        tempora quod
+                        quae natus a in adipisci error et eaque repudiandae. Doloremque placeat dicta facilis cum, nulla
+                        incidunt
+                        voluptas deserunt, voluptatum molestiae cumque exercitationem vitae ex.</p>
+                    <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla est quas aliquid
+                        asperiores
+                        voluptatibus
+                        explicabo ipsum debitis iusto eius quibusdam voluptas fugiat eligendi nihil hic dicta soluta,
+                        mollitia tenetur
+                        animi a saepe, labore sequi atque? Laboriosam, omnis illum suscipit error voluptatibus non vel,
+                        ut fugiat ipsa
+                        laudantium cum porro deserunt.</p>
+                </div>
+            </div>
+            <!-- Hamish -->
+            <div class="bg-light mx-auto shadow w-85 d-flex justify-content-around py-4 mt-4 rounded">
+                <div class="card-content p-4">
+                    <div class="card-header-wrapper">
+                        <div class="card-title-wrapper">
+                            <h3>Hamish Maguire</h3>
+                            <h4>{Title}</h4>
+                            <hr class="hr-tertiary mobile-hr">
+                        </div>
+
+                        <!-- Picture - change to display block on mobile -->
+                        <img src="./img/Ham-cropped.jpg" alt="Layla doing a trick"
+                            class=" rounded img-fluid meet-card-img">
+                    </div>
+                    <hr class="hr-tertiary">
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius placeat vero ex
+                        sapiente. Facere
+                        tempora quod
+                        quae natus a in adipisci error et eaque repudiandae. Doloremque placeat dicta facilis cum, nulla
+                        incidunt
+                        voluptas deserunt, voluptatum molestiae cumque exercitationem vitae ex.</p>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, officia. Officia
+                        laborum esse
+                        praesentium
+                        ipsum, eaque itaque consectetur. Quam officiis accusantium itaque asperiores repellat pariatur
+                        molestias ex
+                        eos laudantium adipisci quo, tenetur optio voluptas dolores ea saepe totam, similique inventore
+                        nihil
+                        reprehenderit. Recusandae minus totam doloribus, corporis in similique voluptatibus.</p>
+                </div>
+            </div>
 
         </div>
-      </div>
-      <div class="card w-17-5 p-2 d-inline-block shadow">
-        <img class="card-img-top" src="./img/TestPhoto.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">7 to 10</h5>
-          <hr class="hr-tertiary">
-          <p class="card-text">Classes that are available</p>
 
-        </div>
-      </div>
-      <div class="card w-17-5 p-2 d-inline-block shadow">
-        <img class="card-img-top" src="./img/TestPhoto.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">10 to 14</h5>
-          <hr class="hr-tertiary">
-          <p class="card-text">Classes that are available</p>
-
-        </div>
-      </div>
-      <div class="card w-17-5 p-2 d-inline-block shadow">
-        <img class="card-img-top" src="./img/TestPhoto.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">14 to 18</h5>
-          <hr class="hr-tertiary">
-          <p class="card-text">Classes that are available</p>
-
-        </div>
-      </div>
-      <div class="card w-17-5 p-2 d-inline-block shadow">
-        <img class="card-img-top" src="./img/TestPhoto.jpg" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">18 and Over</h5>
-          <hr class="hr-tertiary">
-          <p class="card-text">Classes that are available</p>
-
-        </div>
-      </div>
     </div>
 
-    <!-- Classes -->
+    <!-- Age groups -->
 
     <div class="section-spacer"></div>
 
-    <div id="classes" class="d-flex flex-column justify-content-center">
-      <div class="bg-main w-85 rounded mx-auto shadow d-flex justify-content-around">
-        <div class="h1 text-light text-shadow-orange">
-          Classes
+
+    <div id="age-groups" class="">
+        <div class="bg-main w-85 rounded mx-auto shadow d-flex justify-content-around">
+            <div class="h1 text-light text-shadow-orange">
+                Age Groups
+            </div>
         </div>
-      </div>
-    </div>
+        <div class="w-85 mx-auto py-3 d-flex justify-content-between" id="age-group-card-holder">
+            <div class="card p-2 d-inline-block shadow">
+                <img class="card-img-top" src="./img/TestPhoto.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">7 and below</h5>
+                    <hr class="hr-tertiary">
+                    <p class="card-text">Classes that are available</p>
 
-    <div class="bg-light mx-auto shadow w-85 d-flex justify-content-around p-2  mt-4 rounded">
-      <div class="card-content p-4">
-        <h3>Beginner Lessons</h3>
-        <hr class="hr-tertiary">
-        <p class="lead">Beginner lessons are offered for all age groups</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius placeat vero ex sapiente. Facere tempora quod
-          quae natus a in adipisci error et eaque repudiandae. Doloremque placeat dicta facilis cum, nulla incidunt
-          voluptas deserunt, voluptatum molestiae cumque exercitationem vitae ex.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, officia. Officia laborum esse praesentium
-          ipsum, eaque itaque consectetur. Quam officiis accusantium itaque asperiores repellat pariatur molestias ex
-          eos laudantium adipisci quo, tenetur optio voluptas dolores ea saepe totam, similique inventore nihil
-          reprehenderit. Recusandae minus totam doloribus, corporis in similique voluptatibus.</p>
-      </div>
-    </div>
-    <div class="bg-light mx-auto shadow w-85 d-flex justify-content-around p-2  mt-4 rounded">
-      <div class="card-content p-4">
-        <h3>Intermediate Lessons</h3>
-        <hr class="hr-tertiary">
-        <p class="lead">Intermediate lessons are offered for the following age groups:</p>
-        <ul>
-          <li>7 and below</li>
-          <li>7 to 10</li>
-          <li>10 to 14</li>
-        </ul>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius placeat vero ex sapiente. Facere tempora quod
-          quae natus a in adipisci error et eaque repudiandae. Doloremque placeat dicta facilis cum, nulla incidunt
-          voluptas deserunt, voluptatum molestiae cumque exercitationem vitae ex.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, officia. Officia laborum esse praesentium
-          ipsum, eaque itaque consectetur. Quam officiis accusantium itaque asperiores repellat pariatur molestias ex
-          eos laudantium adipisci quo, tenetur optio voluptas dolores ea saepe totam, similique inventore nihil
-          reprehenderit. Recusandae minus totam doloribus, corporis in similique voluptatibus.</p>
-      </div>
-    </div>
+                </div>
+            </div>
+            <div class="card p-2 d-inline-block shadow">
+                <img class="card-img-top" src="./img/TestPhoto.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">7 to 10</h5>
+                    <hr class="hr-tertiary">
+                    <p class="card-text">Classes that are available</p>
 
-    <!-- Safety -->
+                </div>
+            </div>
+            <div class="card p-2 d-inline-block shadow">
+                <img class="card-img-top" src="./img/TestPhoto.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">10 to 14</h5>
+                    <hr class="hr-tertiary">
+                    <p class="card-text">Classes that are available</p>
 
-    <div class="section-spacer"></div>
+                </div>
+            </div>
+            <div class="card p-2 d-inline-block shadow">
+                <img class="card-img-top" src="./img/TestPhoto.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">14 to 18</h5>
+                    <hr class="hr-tertiary">
+                    <p class="card-text">Classes that are available</p>
 
-    <div id="safety" class="d-flex flex-column justify-content-center">
-      <div class="bg-main w-85 rounded mx-auto shadow d-flex justify-content-around">
-        <div class="h1 text-light text-shadow-orange">
-          Safety
+                </div>
+            </div>
+            <div class="card p-2 d-inline-block shadow">
+                <img class="card-img-top" src="./img/TestPhoto.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">18 and Over</h5>
+                    <hr class="hr-tertiary">
+                    <p class="card-text">Classes that are available</p>
+
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-
-    <div class="d-flex mx-auto w-85 justify-content-between">
-      <div class="bg-light shadow w-70 d-flex justify-content-around p-2  mt-4 rounded">
-        <div class="card-content p-4">
-          <h3>Intermediate Lessons</h3>
-          <hr class="hr-tertiary">
-          <p class="lead">Intermediate lessons are offered for the following age groups:</p>
-          <ul>
-            <li>7 and below</li>
-            <li>7 to 10</li>
-            <li>10 to 14</li>
-          </ul>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius placeat vero ex sapiente. Facere tempora quod
-            quae natus a in adipisci error et eaque repudiandae. Doloremque placeat dicta facilis cum, nulla incidunt
-            voluptas deserunt, voluptatum molestiae cumque exercitationem vitae ex.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, officia. Officia laborum esse praesentium
-            ipsum, eaque itaque consectetur. Quam officiis accusantium itaque asperiores repellat pariatur molestias ex
-            eos laudantium adipisci quo, tenetur optio voluptas dolores ea saepe totam, similique inventore nihil
-            reprehenderit. Recusandae minus totam doloribus, corporis in similique voluptatibus.</p>
-        </div>
-      </div>
-      <div class="bg-light shadow w-27 d-flex justify-content-around p-2  mt-4 rounded">
-        <div class="card-content p-4 d-flex flex-column">
-          <div>
-            <h3>Safety Waver</h3>
-            <hr class="hr-tertiary">
-          </div>
-          <p class="lead">Download and read through our waver, it will need to be signed and acknowledged before your
-            lesson.</p>
-          <div class="container h-100 d-flex flex-column align-items-center">
-            <a href="./docs/Wobbly Wheels Consent Waiver.pdf" class="my-auto w-100 btn btn-main" download><i
-                class="fa fa-download"></i> Download</a>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <!-- Contact Us -->
-
-    <div class="section-spacer"></div>
-
-    <div id="contact-us" class="d-flex flex-column justify-content-center">
-      <div class="bg-main w-85 rounded mx-auto shadow d-flex justify-content-around">
-        <div class="h1 text-light text-shadow-orange">
-          Contact Us
-        </div>
-      </div>
-    </div>
-
-    <div class="bg-light mx-auto shadow w-85 d-flex justify-content-around p-2  mt-4 rounded">
-      <div class="card-content p-4 w-100">
-        <h3>Contact methods</h3>
-        <hr class="hr-tertiary">
-        <p class="lead">If you need to to book a lesson, ask a question or just have a chat you can use any of the
-          following to get in touch:</p>
-        <div class="d-flex">
-          <div class="d-flex flex-column justify-content-around">
-            <div class="lead">Instagram:</div>
-            <div class="lead">Facebook:</div>
-            <div class="lead">Email:</div>
-          </div>
-          <div id="socials" class="d-flex flex-column justify-content-center w-5">
-            <a href="https://www.instagram.com/" class="h2 text-center text-main hover-secondary social-link">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.facebook.com/" class="h2 text-center text-main hover-secondary social-link">
-              <i class="fab fa-facebook-square"></i>
-            </a>
-            <a href="mailto:Wobblywheels.lessons@gmail.com"
-              class="h2 text-center text-main hover-secondary social-link">
-              <i class="fas fa-envelope"></i>
-            </a>
-          </div>
-          <br>
-
-        </div>
-        <p class="d-block lead">You can also call or text us on 07 5555 5555.</p>
-      </div>
-    </div>
-
-    <!-- Gallery | Will be implemented through auto fill gallery later with php and file uploads etc -->
-
-    <div class="section-spacer"></div>
-
-    <div id="gallery" class="d-flex flex-column justify-content-center">
-      <div class="bg-main w-85 rounded mx-auto shadow d-flex justify-content-around">
-        <div class="h1 text-light text-shadow-orange">
-          Gallery
-        </div>
-      </div>
-    </div>
-
-    <div class="w-85 mx-auto py-3 d-flex justify-content-between" id="gallery-card-holder">
-      <div class="card w-17-5 p-2 d-inline-block shadow">
-        <div class="d-flex w-100 justify-content-center">
-          <video width="240" height="340" controls loop muted>
-            <source src="./vid/Video.ogg" type="video/ogg">
-          </video>
-        </div>
-        <div class=" card-body">
-          <h5 class="card-title">Test Video Title</h5>
-          <hr class="hr-tertiary">
-          <p class="card-text">Description of trick</p>
-        </div>
-      </div>
-      <div class="card w-17-5 p-2 d-inline-block shadow">
-        <div class="d-flex w-100 justify-content-center">
-          <video width="240" height="340" controls loop muted>
-            <source src="./vid/Video_1.ogg" type="video/ogg">
-          </video>
-        </div>
-        <div class=" card-body">
-          <h5 class="card-title">Test Video Title</h5>
-          <hr class="hr-tertiary">
-          <p class="card-text">Description of trick</p>
-        </div>
-      </div>
-      <div class="card w-17-5 p-2 d-inline-block shadow">
-        <div class="d-flex w-100 justify-content-center">
-          <video width="240" height="340" controls loop muted>
-            <source src="./vid/Video_2.ogg" type="video/ogg">
-          </video>
-        </div>
-        <div class=" card-body">
-          <h5 class="card-title">Test Video Title</h5>
-          <hr class="hr-tertiary">
-          <p class="card-text">Description of trick</p>
-        </div>
-      </div>
-      <div class="card w-17-5 p-2 d-inline-block shadow">
-        <div class="d-flex w-100 justify-content-center">
-          <video width="240" height="340" controls loop muted>
-            <source src="./vid/Video_3.ogg" type="video/ogg">
-          </video>
-        </div>
-        <div class=" card-body">
-          <h5 class="card-title">Test Video Title</h5>
-          <hr class="hr-tertiary">
-          <p class="card-text">Description of trick</p>
-        </div>
-      </div>
-      <div class="card w-17-5 p-2 d-inline-block shadow">
-        <div class="d-flex w-100 justify-content-center">
-          <video width="240" height="340" controls loop muted>
-            <source src="./vid/Video_4.ogg" type="video/ogg">
-          </video>
-        </div>
-        <div class=" card-body">
-          <h5 class="card-title">Test Video Title</h5>
-          <hr class="hr-tertiary">
-          <p class="card-text">Description of trick</p>
-        </div>
-      </div>
-    </div>
-    <div class="w-85 mx-auto py-3 d-flex justify-content-between" id="gallery-card-holder">
-
-      <div class="card w-17-5 p-2 d-inline-block shadow">
-        <div class="d-flex w-100 justify-content-center">
-          <video width="240" height="340" controls loop muted>
-            <source src="./vid/Video_5.ogg" type="video/ogg">
-          </video>
-        </div>
-        <div class=" card-body">
-          <h5 class="card-title">Test Video Title</h5>
-          <hr class="hr-tertiary">
-          <p class="card-text">Description of trick</p>
-        </div>
-      </div>
-    </div>
 
 
-    <!-- End of content -->
-  </div>
+        <!-- Classes -->
 
-  <!-- Footer -->
-  <footer class="bg-main h-10 w-100">
-    <div class="container text-center">
-      <h4 class="pt-2 text-light text-shadow-orange">&copy; Wobbly Wheels 2021</h4>
-      <div id="socials" class="d-flex justify-content-between w-20 mx-auto">
-        <a href="https://www.instagram.com/wobblywheels.lessons/"
-          class="h2 text-center text-light-custom text-shadow-orange hover-secondary social-link">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://www.facebook.com/wobblywheels.lessons"
-          class="h2 text-center text-light-custom text-shadow-orange hover-secondary social-link">
-          <i class="fab fa-facebook-square"></i>
-        </a>
-        <a href="mailto:Wobblywheels.lessons@gmail.com"
-          class="h2 text-center text-light-custom text-shadow-orange hover-secondary social-link">
-          <i class="fas fa-envelope"></i>
-        </a>
-      </div>
-    </div>
-  </footer>
+        <div class="section-spacer"></div>
+
+        <div id="classes" class="d-flex flex-column justify-content-center">
+            <div class="bg-main w-85 rounded mx-auto shadow d-flex justify-content-around">
+                <div class="h1 text-light text-shadow-orange">
+                    Classes
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-light mx-auto shadow w-85 d-flex justify-content-around p-2  mt-4 rounded" id="classes">
+            <div class="card-content p-4">
+                <h3>Beginner Lessons</h3>
+                <hr class="hr-tertiary">
+                <p class="lead">Beginner lessons are offered for all age groups</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius placeat vero ex sapiente. Facere
+                    tempora quod
+                    quae natus a in adipisci error et eaque repudiandae. Doloremque placeat dicta facilis cum, nulla
+                    incidunt
+                    voluptas deserunt, voluptatum molestiae cumque exercitationem vitae ex.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, officia. Officia laborum esse
+                    praesentium
+                    ipsum, eaque itaque consectetur. Quam officiis accusantium itaque asperiores repellat pariatur
+                    molestias ex
+                    eos laudantium adipisci quo, tenetur optio voluptas dolores ea saepe totam, similique inventore
+                    nihil
+                    reprehenderit. Recusandae minus totam doloribus, corporis in similique voluptatibus.</p>
+            </div>
+        </div>
+        <div class="bg-light mx-auto shadow w-85 d-flex justify-content-around p-2  mt-4 rounded">
+            <div class="card-content p-4">
+                <h3>Intermediate Lessons</h3>
+                <hr class="hr-tertiary">
+                <p class="lead">Intermediate lessons are offered for the following age groups:</p>
+                <ul>
+                    <li>7 and below</li>
+                    <li>7 to 10</li>
+                    <li>10 to 14</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius placeat vero ex sapiente. Facere
+                    tempora quod
+                    quae natus a in adipisci error et eaque repudiandae. Doloremque placeat dicta facilis cum, nulla
+                    incidunt
+                    voluptas deserunt, voluptatum molestiae cumque exercitationem vitae ex.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, officia. Officia laborum esse
+                    praesentium
+                    ipsum, eaque itaque consectetur. Quam officiis accusantium itaque asperiores repellat pariatur
+                    molestias ex
+                    eos laudantium adipisci quo, tenetur optio voluptas dolores ea saepe totam, similique inventore
+                    nihil
+                    reprehenderit. Recusandae minus totam doloribus, corporis in similique voluptatibus.</p>
+            </div>
+        </div>
+
+        <!-- Safety -->
+
+        <div class="section-spacer"></div>
+
+        <div id="safety" class="d-flex flex-column justify-content-center">
+            <div class="bg-main w-85 rounded mx-auto shadow d-flex justify-content-around">
+                <div class="h1 text-light text-shadow-orange">
+                    Safety
+                </div>
+            </div>
+        </div>
+
+        <div class="mx-auto w-85 justify-content-between" id="safety-container">
+            <div class="bg-light shadow justify-content-around p-2  mt-4 rounded" id="safety-content">
+                <div class="card-content p-4">
+                    <h3>Intermediate Lessons</h3>
+                    <hr class="hr-tertiary">
+                    <p class="lead">Intermediate lessons are offered for the following age groups:</p>
+                    <ul>
+                        <li>7 and below</li>
+                        <li>7 to 10</li>
+                        <li>10 to 14</li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius placeat vero ex sapiente. Facere
+                        tempora quod
+                        quae natus a in adipisci error et eaque repudiandae. Doloremque placeat dicta facilis cum, nulla
+                        incidunt
+                        voluptas deserunt, voluptatum molestiae cumque exercitationem vitae ex.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, officia. Officia laborum esse
+                        praesentium
+                        ipsum, eaque itaque consectetur. Quam officiis accusantium itaque asperiores repellat pariatur
+                        molestias ex
+                        eos laudantium adipisci quo, tenetur optio voluptas dolores ea saepe totam, similique inventore
+                        nihil
+                        reprehenderit. Recusandae minus totam doloribus, corporis in similique voluptatibus.</p>
+                </div>
+            </div>
+            <div class="bg-light shadow justify-content-around p-2  mt-4 rounded" id="safety-waver">
+                <div class="card-content p-4 d-flex flex-column">
+                    <div>
+                        <h3>Safety Waver</h3>
+                        <hr class="hr-tertiary">
+                    </div>
+
+                    <p class="lead">Download and read through our waver, it will need to be signed and acknowledged
+                        before your
+                        lesson.</p>
+                    <img src="./img/safety.jpeg" alt="Safety First" class="img-fluid rounded w-90 my-3 mx-auto">
+                    <div class="container h-100 d-flex flex-column align-items-center">
+                        <a href="./docs/Wobbly Wheels Consent Waiver.pdf" class="my-auto w-100 btn btn-main" download><i
+                                class="fa fa-download"></i> Download</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Us -->
+
+        <div class="section-spacer"></div>
+
+        <div id="contact-us" class="d-flex flex-column justify-content-center">
+            <div class="bg-main w-85 rounded mx-auto shadow d-flex justify-content-around">
+                <div class="h1 text-light text-shadow-orange">
+                    Contact Us
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-light mx-auto shadow w-85 d-flex justify-content-around p-2  mt-4 rounded">
+            <div class="card-content p-4 w-100">
+                <h3>Contact methods</h3>
+                <hr class="hr-tertiary">
+                <p class="lead">If you need to to book a lesson, ask a question or just have a chat you can use any of
+                    the
+                    following to get in touch:</p>
+                <div class="d-flex">
+                    <div class="d-flex flex-column justify-content-around">
+                        <div class="lead">Instagram:</div>
+                        <div class="lead">Facebook:</div>
+                        <div class="lead">Email:</div>
+                    </div>
+                    <div id="socials" class="d-flex flex-column justify-content-center w-5">
+                        <a href="https://www.instagram.com/"
+                            class="h2 text-center text-main hover-secondary social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/"
+                            class="h2 text-center text-main hover-secondary social-link">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a href="mailto:Wobblywheels.lessons@gmail.com"
+                            class="h2 text-center text-main hover-secondary social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                    <br>
+
+                </div>
+                <p class="d-block lead">You can also call or text us on 07 5555 5555.</p>
+            </div>
+        </div>
 
 
-  <!-- ==================== Scripts ==================== -->
-  <!-- Custom -->
-  <script src="./js/scroll.js"></script>
-  <!-- Bootstrap -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+        <!-- Gallery | Will be implemented through auto fill gallery later with php and file uploads etc -->
+
+        <div class="section-spacer"></div>
+
+        <div id="gallery" class="d-flex flex-column justify-content-center">
+            <div class="bg-main w-85 rounded mx-auto shadow d-flex justify-content-around">
+                <div class="h1 text-light text-shadow-orange">
+                    Gallery
+                </div>
+            </div>
+        </div>
+
+        <div class="w-85 mx-auto py-3 d-flex justify-content-between" id="gallery-card-holder">
+            <div class="card p-2 d-inline-block shadow gallery-card">
+                <div class="d-flex w-100 justify-content-center">
+                    <video controls loop muted class="gallery-video">
+                        <source src="./vid/Video.ogg" type="video/ogg">
+                    </video>
+                </div>
+                <div class=" card-body">
+                    <h5 class="card-title">Test Video Title</h5>
+                    <hr class="hr-tertiary">
+                    <p class="card-text">Description of trick</p>
+                </div>
+            </div>
+            <div class="card p-2 d-inline-block shadow gallery-card">
+                <div class="d-flex w-100 justify-content-center">
+                    <video controls loop muted class="gallery-video">
+                        <source src="./vid/Video_1.ogg" type="video/ogg">
+                    </video>
+                </div>
+                <div class=" card-body">
+                    <h5 class="card-title">Test Video Title</h5>
+                    <hr class="hr-tertiary">
+                    <p class="card-text">Description of trick</p>
+                </div>
+            </div>
+            <div class="card p-2 d-inline-block shadow gallery-card">
+                <div class="d-flex w-100 justify-content-center">
+                    <video controls loop muted class="gallery-video">
+                        <source src="./vid/Video_2.ogg" type="video/ogg">
+                    </video>
+                </div>
+                <div class=" card-body">
+                    <h5 class="card-title">Test Video Title</h5>
+                    <hr class="hr-tertiary">
+                    <p class="card-text">Description of trick</p>
+                </div>
+            </div>
+            <div class="card p-2 d-inline-block shadow gallery-card">
+                <div class="d-flex w-100 justify-content-center">
+                    <video controls loop muted class="gallery-video">
+                        <source src="./vid/Video_3.ogg" type="video/ogg">
+                    </video>
+                </div>
+                <div class=" card-body">
+                    <h5 class="card-title">Test Video Title</h5>
+                    <hr class="hr-tertiary">
+                    <p class="card-text">Description of trick</p>
+                </div>
+            </div>
+            <div class="card p-2 d-inline-block shadow gallery-card">
+                <div class="d-flex w-100 justify-content-center">
+                    <video controls loop muted class="gallery-video">
+                        <source src="./vid/Video_4.ogg" type="video/ogg">
+                    </video>
+                </div>
+                <div class=" card-body">
+                    <h5 class="card-title">Test Video Title</h5>
+                    <hr class="hr-tertiary">
+                    <p class="card-text">Description of trick</p>
+                </div>
+            </div>
+            <div class="card p-2 d-inline-block shadow gallery-card">
+                <div class="d-flex w-100 justify-content-center">
+                    <video controls loop muted class="gallery-video">
+                        <source src="./vid/Video_5.ogg" type="video/ogg">
+                    </video>
+                </div>
+                <div class=" card-body">
+                    <h5 class="card-title">Test Video Title</h5>
+                    <hr class="hr-tertiary">
+                    <p class="card-text">Description of trick</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Footer -->
+        <footer class="bg-main w-100" id="footer">
+            <div class="container text-center">
+                <h4 class="pt-2 text-light text-shadow-orange">&copy; Wobbly Wheels 2021</h4>
+                <div class="d-flex justify-content-between mx-auto socials">
+                    <a href="https://www.instagram.com/wobblywheels.lessons/"
+                        class="h2 text-center text-light-custom text-shadow-orange hover-secondary social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/wobblywheels.lessons"
+                        class="h2 text-center text-light-custom text-shadow-orange hover-secondary social-link">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="mailto:Wobblywheels.lessons@gmail.com"
+                        class="h2 text-center text-light-custom text-shadow-orange hover-secondary social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- Custom -->
+        <script src="./js/scroll.js"></script>
+        <script src="./js/functionality.js"></script>
 </body>
 
 </html>

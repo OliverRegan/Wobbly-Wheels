@@ -1,0 +1,91 @@
+/* Utility */
+.mobile-hr{
+    display: block;
+}
+
+
+/* Nav stuff */
+
+#top-brand{
+    width: 320px;
+    height: 135px;
+}
+
+#brand-bar{
+    height: auto;
+    width: 100%;
+}
+#main-nav{
+    display: none;
+}
+#logo-main{
+    display: block;
+}
+
+
+/* Showcase stuff */
+#showcase{
+
+}
+
+/* footer stuff */
+.socials{
+    width: 85%;
+}
+
+/* Card content stuff */
+.card-header-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-title-wrapper h3,
+.card-title-wrapper h4{
+   text-align: center;
+}
+
+.meet-card-img{
+    width: 85%;
+    max-width: 436px;
+    margin: 1rem auto;
+}
+
+/* Age groups */
+
+#age-group-card-holder{
+    flex-direction: column;
+}
+#age-group-card-holder > div:not(:last-child){
+    margin-right: 0rem;
+    margin-bottom: 1rem;
+}
+
+/* Safety */
+#safety-container{
+    flex-direction: column;
+}
+
+#safety-content{
+    width: 100%;
+}
+
+#safety-waver{
+    width: 100%;
+}
+
+/* gallery */
+#gallery-card-holder{
+    flex-direction: column;
+}
+
+.gallery-card{
+    margin: 1rem 0rem;
+    width: 100%;
+}
+
+.gallery-video{
+    width: 80%;
+    height: 80%;
+    margin: 1rem 0rem;
+}

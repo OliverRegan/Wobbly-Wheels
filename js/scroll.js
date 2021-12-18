@@ -5,6 +5,9 @@ let classes = document.getElementById('classes');
 let aboutUs = document.getElementById('about-us');
 let contactUs = document.getElementById('contact-us');
 
+// Scroll to top button
+let scrollTop = document.getElementById('scroll-top');
+
 
 //Add event listener for each in nav bar and enable scroll function
 document.querySelectorAll('.nav-link-custom').forEach(link => {
@@ -20,7 +23,6 @@ document.querySelectorAll('.nav-link-custom').forEach(link => {
         // Pass id into funtion
         scrollToId(id);
 
-        console.log(typeof (id));
     })
 })
 
@@ -28,10 +30,18 @@ document.querySelectorAll('.nav-link-custom').forEach(link => {
 function scrollToId(id) {
 
     // Offset by 5vh, converted is equal to 46.45 px
-    const yOffset = -200;
+    const yOffset = -30;
     const element = document.getElementById(id);
     const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
     window.scrollTo({ top: y, behavior: 'smooth' });
 
 }
+
+// Scroll to top function
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
+}
+
+scrollTop.addEventListener('click', scrollToTop);
