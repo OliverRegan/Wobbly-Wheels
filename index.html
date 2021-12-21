@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/utility.css">
 
-    <link rel="stylesheet" media="screen and (max-width: 768px)" href="./css/mobile.css">
+    <link rel="stylesheet" media="screen and (max-width: 995px)" href="./css/mobile.css">
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
 
@@ -47,58 +47,54 @@
         <i class="fa fa-arrow-up"></i>
     </div>
     <!-- Nav and brand bar -->
-    <header class="bg-main">
+    <div class="bg-main" id="header">
         <div id="brand-bar" class="d-flex justify-content-center">
             <img src="./img/Logo - Text aside.jpg" alt="Logo" id="top-brand">
         </div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-main-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
-                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarToggler">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 w-100">
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-main-light sticky-top" id="nav-bar">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <h3 class="text-light text-shadow-orange" id="mobile-brand">Wobbly Wheels</h3>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 w-100">
 
-                    <li class="nav-list-item h3 d-flex justify-content-center w-100 m-0">
-                        <a id='meet-the-team-btn'
-                            class="text-shadow-orange w-100 m-0 p-0 py-3 nav-link-custom hover-secondary">
-                            The Team
-                        </a>
-                    </li>
-                    <li class="nav-list-item h3 d-flex justify-content-center w-100 m-0">
-                        <a id='age-groups-btn'
-                            class="text-shadow-orange w-100 m-0 p-0 py-3 nav-link-custom hover-secondary">
-                            Age Groups
-                        </a>
-                    </li>
-                    <li class="nav-list-item h3 d-flex justify-content-center w-100 m-0">
-                        <a id='classes-btn'
-                            class="text-shadow-orange w-100 m-0 p-0 py-3 nav-link-custom hover-secondary">
-                            Classes
-                        </a>
-                    </li>
-                    <li class="nav-list-item h3 d-flex justify-content-center w-100 m-0">
-                        <a id='safety-btn'
-                            class="text-shadow-orange w-100 m-0 p-0 py-3 nav-link-custom hover-secondary">
-                            Safety
-                        </a>
-                    </li>
-                    <li class="nav-list-item h3 d-flex justify-content-center w-100 m-0">
-                        <a id='contact-us-btn'
-                            class="text-shadow-orange w-100 m-0 p-0 py-3 nav-link-custom hover-secondary">
-                            Contact Us
-                        </a>
-                    </li>
-                    <li class="nav-list-item h3 d-flex justify-content-center w-100 m-0">
-                        <a id='gallery-btn'
-                            class="text-shadow-orange w-100 m-0 p-0 py-3 nav-link-custom hover-secondary">
-                            Gallery
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+                <li class="nav-list-item h3 d-flex justify-content-center w-100 m-0">
+                    <a id='meet-the-team-btn' class="text-shadow-orange w-100 m-0 nav-link-custom hover-secondary">
+                        The Team
+                    </a>
+                </li>
+                <li class="nav-list-item h3 d-flex justify-content-center w-100 m-0">
+                    <a id='age-groups-btn' class="text-shadow-orange w-100 m-0 nav-link-custom hover-secondary">
+                        Age Groups
+                    </a>
+                </li>
+                <li class="nav-list-item h3 d-flex justify-content-center w-100 m-0">
+                    <a id='classes-btn' class="text-shadow-orange w-100 m-0 nav-link-custom hover-secondary">
+                        Classes
+                    </a>
+                </li>
+                <li class="nav-list-item h3 d-flex justify-content-center w-100 m-0">
+                    <a id='safety-btn' class="text-shadow-orange w-100 m-0 nav-link-custom hover-secondary">
+                        Safety
+                    </a>
+                </li>
+                <li class="nav-list-item h3 d-flex justify-content-center w-100 m-0">
+                    <a id='contact-us-btn' class="text-shadow-orange w-100 m-0 nav-link-custom hover-secondary">
+                        Contact Us
+                    </a>
+                </li>
+                <li class="nav-list-item h3 d-flex justify-content-center w-100 m-0">
+                    <a id='gallery-btn' class="text-shadow-orange w-100 m-0 nav-link-custom hover-secondary">
+                        Gallery
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
 
     <!-- Showcase - Hidden on mobile devices -->
     <div class="showcase-wrapper">
@@ -454,8 +450,7 @@
         <div class="w-85 mx-auto py-3 d-flex justify-content-between" id="gallery-card-holder">
             <div class="card p-2 d-inline-block shadow gallery-card">
                 <div class="d-flex w-100 justify-content-center">
-                    <video controls loop muted playsinline playsinline poster="./img/Logo - Transparent.jpeg"
-                        class="gallery-video">
+                    <video controls loop muted playsinline class="gallery-video rounded">
                         <source src="./vid/Video.mp4" type="video/mp4">
                         <source src="./vid/Video.webm" type="video/webm">
                         <source src="./vid/Video.ogg" type="video/ogg">
@@ -469,7 +464,7 @@
             </div>
             <div class="card p-2 d-inline-block shadow gallery-card">
                 <div class="d-flex w-100 justify-content-center">
-                    <video controls loop muted playsinline poster="./img/Logo - Transparent.jpeg" class="gallery-video">
+                    <video controls loop muted playsinline class="gallery-video rounded">
                         <source src="./vid/Video_1.mp4" type="video/mp4">
                         <source src="./vid/Video_1.webm" type="video/webm">
                         <source src="./vid/Video_1.ogg" type="video/ogg">
@@ -483,7 +478,7 @@
             </div>
             <div class="card p-2 d-inline-block shadow gallery-card">
                 <div class="d-flex w-100 justify-content-center">
-                    <video controls loop muted playsinline poster="./img/Logo - Transparent.jpeg" class="gallery-video">
+                    <video controls loop muted playsinline class="gallery-video rounded">
                         <source src="./vid/Video_2.mp4" type="video/mp4">
                         <source src="./vid/Video_2.webm" type="video/webm">
                         <source src="./vid/Video_2.ogg" type="video/ogg">
@@ -497,7 +492,7 @@
             </div>
             <div class="card p-2 d-inline-block shadow gallery-card">
                 <div class="d-flex w-100 justify-content-center">
-                    <video controls loop muted playsinline poster="./img/Logo - Transparent.jpeg" class="gallery-video">
+                    <video controls loop muted playsinline class="gallery-video rounded">
                         <source src="./vid/Video_3.mp4" type="video/mp4">
                         <source src="./vid/Video_3.webm" type="video/webm">
                         <source src="./vid/Video_3.ogg" type="video/ogg">
@@ -511,7 +506,7 @@
             </div>
             <div class="card p-2 d-inline-block shadow gallery-card">
                 <div class="d-flex w-100 justify-content-center">
-                    <video controls loop muted playsinline poster="./img/Logo - Transparent.jpeg" class="gallery-video">
+                    <video controls loop muted playsinline class="gallery-video rounded">
                         <source src="./vid/Video_4.mp4" type="video/mp4">
                         <source src="./vid/Video_4.webm" type="video/webm">
                         <source src="./vid/Video_4.ogg" type="video/ogg">
@@ -525,7 +520,7 @@
             </div>
             <div class="card p-2 d-inline-block shadow gallery-card">
                 <div class="d-flex w-100 justify-content-center">
-                    <video controls loop muted playsinline poster="./img/Logo - Transparent.jpeg" class="gallery-video">
+                    <video controls loop muted playsinline class="gallery-video rounded">
                         <source src="./vid/Video_5.mp4" type="video/mp4">
                         <source src="./vid/Video_5.webm" type="video/webm">
                         <source src="./vid/Video_5.ogg" type="video/ogg">

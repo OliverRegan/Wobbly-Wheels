@@ -1,4 +1,5 @@
 // ==================== Document ID's ====================
+let nav = document.getElementById('nav-bar');
 let meetTheTeam = document.getElementById('meet-the-team');
 let ageGroups = document.getElementById('age-groups');
 let classes = document.getElementById('classes');
@@ -44,4 +45,13 @@ function scrollToTop() {
 
 }
 
+
+// Change Nav opacity on scroll
+function scrollOpacity() {
+
+    wi
+
+}
+
+// Event Listeners
 scrollTop.addEventListener('click', scrollToTop);

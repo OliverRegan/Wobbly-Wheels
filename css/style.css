@@ -50,6 +50,17 @@
 
 /*==================== Nav list ====================*/
 
+.nav-link-item{
+    padding: 0rem 3rem;
+}
+.nav-link-custom{
+    padding: 1rem 0rem;
+}
+
+#mobile-brand{
+    display: none;
+}
+
 #top-brand{
     width: 548px;
     height: 232px;
