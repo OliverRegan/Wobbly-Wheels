@@ -31,7 +31,16 @@ document.querySelectorAll('.nav-link-custom').forEach(link => {
 function scrollToId(id) {
 
     // Offset by 5vh, converted is equal to 46.45 px
-    const yOffset = -30;
+    let width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+    let yOffset;
+
+    if (width <= 768) {
+        yOffset = -480;
+    } else {
+        yOffset = -120;
+    }
+
     const element = document.getElementById(id);
     const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
 
@@ -45,13 +54,6 @@ function scrollToTop() {
 
 }
 
-
-// Change Nav opacity on scroll
-function scrollOpacity() {
-
-    wi
-
-}
 
 // Event Listeners
 scrollTop.addEventListener('click', scrollToTop);

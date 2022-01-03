@@ -135,14 +135,21 @@
     max-width: 436px;
 }
 
-/* Age groups */
+/* lesson groups */
 
-#age-group-card-holder{
+#lesson-group-card-holder{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
-#age-group-card-holder > div:not(:last-child){
+#lesson-group-card-holder{
     margin-right: 1rem;
+}
+.lesson-card-container{
+    width: 49%;
+}
+.lesson-card{
+    height: 95%;
 }
 
 /* Safety */
@@ -151,13 +158,9 @@
     flex-direction: row;
 }
 
-#safety-content{
-    width: 70%;
-}
 
-#safety-waver{
-    width: 27%;
-}
+
+
 
 /* gallery */
 
