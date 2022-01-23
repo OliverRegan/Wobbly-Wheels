@@ -135,22 +135,50 @@
     max-width: 436px;
 }
 
+/* Meet the team */
+#meet-the-team-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.coach-card-custom{
+    width: 30%;
+}
+
+
 /* lesson groups */
 
 #lesson-group-card-holder{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-}
-#lesson-group-card-holder{
+    justify-content: space-between;
     margin-right: 1rem;
+
 }
-.lesson-card-container{
-    width: 49%;
-}
+
+
 .lesson-card{
-    height: 95%;
+    min-width: 20%;
+
+    box-shadow: -1rem 0 3rem #333, 5px 5px 5px rgba(0,0,0,0.4);
+
+    transition: 0.2s;
 }
+
+/* Animations for lesson cards */
+.lesson-card:not(:first-child){
+    margin-left: -150px;
+}
+
+.lesson-card:hover{
+    transform: translateY(-1rem);
+}
+
+.lesson-card:hover~.lesson-card{
+    transform: translateX(75px);
+} 
+
+
 
 /* Safety */
 #safety-container{
@@ -179,3 +207,5 @@
     width: 100%;
     height: 100%;
 }
+
+

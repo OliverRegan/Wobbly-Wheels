@@ -43,11 +43,48 @@
    text-align: center;
 }
 
+/* Meet the team */
+#meet-the-team-container{
+    display: flex;
+    flex-direction: column;
+}
+
 .meet-card-img{
     width: 85%;
     max-width: 436px;
-    margin: 1rem auto;
 }
+
+.coach-card-custom{
+    width: 100%;
+}
+
+
+/* Lessons */
+#lesson-group-card-holder{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 1rem;
+
+}
+
+.lesson-card{
+    width: 100%;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.4)
+}
+/* Animations for lesson cards */
+.lesson-card:not(:first-child){
+    margin-left: auto;
+}
+
+.lesson-card:hover{
+    transform: none;
+}
+
+.lesson-card:hover~.lesson-card{
+    transform: none;
+} 
+
 
 /* Age groups */
 
@@ -58,6 +95,10 @@
     margin-right: 0rem;
     margin-bottom: 1rem;
 }
+
+
+
+
 
 /* Safety */
 #safety-container{
@@ -71,6 +112,10 @@
 #safety-waver{
     width: 100%;
 }
+
+
+
+
 
 /* gallery */
 #gallery-card-holder{
@@ -89,6 +134,14 @@
 }
 
 /* Lessons */
+#lesson-group-card-holder{
+    display: flex;
+    height: auto;
+}
 .lesson-card-container{
     width: 100%;
+    height: auto;
+}
+.lesson-card{
+    height: auto;
 }
