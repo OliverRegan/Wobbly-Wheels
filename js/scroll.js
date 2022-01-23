@@ -35,8 +35,8 @@ function scrollToId(id) {
 
     let yOffset;
 
-    if (width <= 768) {
-        yOffset = -480;
+    if (width <= 930) {
+        yOffset = -440;
     } else {
         yOffset = -120;
     }

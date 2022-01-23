@@ -69,7 +69,7 @@
 }
 
 .lesson-card{
-    width: 100%;
+    max-width: 100%;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.4)
 }
 /* Animations for lesson cards */
@@ -112,7 +112,13 @@
 #safety-waver{
     width: 100%;
 }
-
+#safety-img{
+    display: flex;
+    flex-direction: column-reverse;
+}
+#safety-img img{
+    width: 100%;
+}
 
 
 

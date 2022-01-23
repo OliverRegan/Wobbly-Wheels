@@ -116,6 +116,10 @@
     transition: var(--standard-transition);
 }
 
+.social-link-safety{
+    font-size: 2rem;
+}
+
 .socials{
     font-size: 3rem;
     width: 20%;
@@ -133,6 +137,7 @@
 .meet-card-img{
     width: 45%;
     max-width: 436px;
+    
 }
 
 /* Meet the team */
@@ -158,7 +163,7 @@
 
 
 .lesson-card{
-    min-width: 20%;
+    max-width: 20%;
 
     box-shadow: -1rem 0 3rem #333, 5px 5px 5px rgba(0,0,0,0.4);
 
@@ -172,10 +177,11 @@
 
 .lesson-card:hover{
     transform: translateY(-1rem);
+
 }
 
 .lesson-card:hover~.lesson-card{
-    transform: translateX(75px);
+    transform: translateX(150px);
 } 
 
 
@@ -184,6 +190,17 @@
 #safety-container{
     display: flex;
     flex-direction: row;
+}  
+
+#safety-img{
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+
+#safety-img img{
+    width: 50%;
+    
 }
 
 

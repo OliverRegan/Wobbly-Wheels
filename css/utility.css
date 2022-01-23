@@ -369,3 +369,9 @@ img{
 .mobile-hr{
     display: none;
 }
+
+
+/* Text */
+.text-bigger{
+    font-size: 1.5rem;
+}
