@@ -42,64 +42,75 @@
 </head>
 
 <body class="bg-dark" id="main-body">
-    <!-- Button to scroll to the top of the page -->
-    <div class="bg-main-light text-light shadow" id="scroll-top">
-        <i class="fa fa-arrow-up"></i>
-    </div>
-    <!-- Nav and brand bar -->
-    <div class="bg-main" id="header">
-        <div id="brand-bar" class="d-flex justify-content-center">
-            <img src="./img/Logo - Text aside.jpg" alt="Logo" id="top-brand">
+    <!-- Header & showcase container -->
+    <div id="header-and-showcase-container">
+        <!-- Button to scroll to the top of the page -->
+        <div class="bg-main-light text-light shadow" id="scroll-top">
+            <i class="fa fa-arrow-up"></i>
         </div>
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-main-light sticky-top" id="nav-bar">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
-            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <h3 class="text-light text-shadow-orange" id="mobile-brand">Wobbly Wheels</h3>
-        <div class="collapse navbar-collapse" id="navbarToggler">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0 w-100">
+        <!-- Nav and brand bar -->
+        <div class="bg-main" id="header">
+            <div id="brand-bar" class="d-flex justify-content-center">
+                <img src="./img/Logo - Text aside.jpg" alt="Logo" id="top-brand">
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-main-light sticky-top" id="nav-bar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <h3 class="text-light text-shadow-orange" id="mobile-brand">Wobbly Wheels</h3>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 w-100">
 
-                <li class="nav-list-item h3 d-flex justify-content-center w-100 m-0">
-                    <a id='about-us-btn' class="text-shadow-orange w-100 m-0 nav-link-custom hover-secondary">
-                        About Us
-                    </a>
-                </li>
-                <li class="nav-list-item h3 d-flex justify-content-center w-100 m-0">
-                    <a id='meet-the-team-btn' class="text-shadow-orange w-100 m-0 nav-link-custom hover-secondary">
-                        The Team
-                    </a>
-                </li>
-                <li class="nav-list-item h3 d-flex justify-content-center w-100 m-0">
-                    <a id='lessons-btn' class="text-shadow-orange w-100 m-0 nav-link-custom hover-secondary">
-                        Lessons
-                    </a>
-                </li>
-                <li class="nav-list-item h3 d-flex justify-content-center w-100 m-0">
-                    <a id='safety-btn' class="text-shadow-orange w-100 m-0 nav-link-custom hover-secondary">
-                        Safety
-                    </a>
-                </li>
-                <li class="nav-list-item h3 d-flex justify-content-center w-100 m-0">
-                    <a id='contact-&-booking-btn' class="text-shadow-orange w-100 m-0 nav-link-custom hover-secondary">
-                        Contact & Booking
-                    </a>
-                </li>
-                <!-- <li class="nav-list-item h3 d-flex justify-content-center w-100 m-0">
+                    <li class="nav-list-item h3 d-flex justify-content-center w-100 m-0">
+                        <a id='about-us-btn' class="text-shadow-orange w-100 m-0 nav-link-custom hover-secondary">
+                            About Us
+                        </a>
+                    </li>
+                    <li class="nav-list-item h3 d-flex justify-content-center w-100 m-0">
+                        <a id='meet-the-team-btn' class="text-shadow-orange w-100 m-0 nav-link-custom hover-secondary">
+                            The Team
+                        </a>
+                    </li>
+                    <li class="nav-list-item h3 d-flex justify-content-center w-100 m-0">
+                        <a id='lessons-btn' class="text-shadow-orange w-100 m-0 nav-link-custom hover-secondary">
+                            Lessons
+                        </a>
+                    </li>
+                    <li class="nav-list-item h3 d-flex justify-content-center w-100 m-0">
+                        <a id='safety-btn' class="text-shadow-orange w-100 m-0 nav-link-custom hover-secondary">
+                            Safety
+                        </a>
+                    </li>
+                    <li class="nav-list-item h3 d-flex justify-content-center w-100 m-0">
+                        <a id='contact-&-booking-btn'
+                            class="text-shadow-orange w-100 m-0 nav-link-custom hover-secondary">
+                            Contact & Booking
+                        </a>
+                    </li>
+                    <!-- <li class="nav-list-item h3 d-flex justify-content-center w-100 m-0">
                     <a id='gallery-btn' class="text-shadow-orange w-100 m-0 nav-link-custom hover-secondary">
                         Gallery
                     </a>
                 </li> -->
-            </ul>
-        </div>
-    </nav>
+                </ul>
+            </div>
+        </nav>
 
 
-    <!-- Showcase  -->
-    <div class="showcase-wrapper">
-        <div id="showcase" class="w-100">
-            <img alt="Banner" id="showcase-banner">
+        <!-- Showcase  -->
+        <div class="showcase-wrapper">
+            <div id="showcase" class="w-100">
+                <div class="container">
+                    <h1>Learn How to Roller Skate!</h1>
+                    <br>
+                    <br>
+                    <h2>Private and Group Classes in Graceville Brisbane</h2>
+                </div>
+
+
+            </div>
         </div>
     </div>
 
@@ -257,7 +268,8 @@
 
             <div class="card my-2 p-2 d-inline-block  lesson-card">
                 <div class="card-body">
-                    <h5 class="card-title">Beginner Netball Court Lessons</h5>
+                    <h5 class="card-title lesson-card-title">Beginner Netball Court Lessons</h5>
+                    <h5 class="card-title lesson-card-price">$20</h5>
                     <hr class="hr-tertiary">
                     <p class="card-text">First time skaters – in this class you will learn the fundamentals of
                         skating
@@ -270,7 +282,8 @@
 
             <div class="card my-2 p-2 d-inline-block  lesson-card">
                 <div class="card-body">
-                    <h5 class="card-title">Intermediate Netball Court Lessons</h5>
+                    <h5 class="card-title lesson-card-title">Intermediate Netball Court Lessons</h5>
+                    <h5 class="card-title lesson-card-price">$20</h5>
                     <hr class="hr-tertiary">
                     <p class="card-text">Been skating for a while (should be able to confidently skate forwards
                         before attending) – you will learn to skate in many different variations including
@@ -284,7 +297,8 @@
 
             <div class="card my-2 p-2 d-inline-block  lesson-card">
                 <div class="card-body">
-                    <h5 class="card-title">Advanced Netball Court Lessons</h5>
+                    <h5 class="card-title lesson-card-title">Advanced Netball Court Lessons</h5>
+                    <h5 class="card-title lesson-card-price">$20</h5>
                     <hr class="hr-tertiary">
                     <p class="card-text">Confident skaters (should be able to turn, skate forwards and backwards) –
                         you will lean to turn on one foot, some dance skate moves, advanced jumps, advanced
@@ -296,7 +310,8 @@
 
             <div class="card my-2 p-2 d-inline-block  lesson-card">
                 <div class="card-body">
-                    <h5 class="card-title">Adult Netball Court</h5>
+                    <h5 class="card-title lesson-card-title">Adult Netball Court</h5>
+                    <h5 class="card-title lesson-card-price">$20</h5>
                     <hr class="hr-tertiary">
                     <p class="card-text">This class is suited to all adults. We offer exercise, games, skill
                         development and our lessons will be tailored to our roller skaters as a group and as
@@ -309,7 +324,8 @@
 
             <div class="card my-2 p-2 d-inline-block  lesson-card">
                 <div class="card-body">
-                    <h5 class="card-title">Skate Park Beginner</h5>
+                    <h5 class="card-title lesson-card-title">Skate Park Beginner</h5>
+                    <h5 class="card-title lesson-card-price">$35</h5>
                     <hr class="hr-tertiary">
                     <p class="card-text">Should already have completed the advance netball court lessons and have
                         been approved to move into this class by a coach (feel free to enquire!). You will learn to
@@ -322,7 +338,8 @@
 
             <div class="card my-2 p-2 d-inline-block  lesson-card">
                 <div class="card-body">
-                    <h5 class="card-title">Skate Park Advanced</h5>
+                    <h5 class="card-title lesson-card-title">Skate Park Advanced</h5>
+                    <h5 class="card-title lesson-card-price">$35</h5>
                     <hr class="hr-tertiary">
                     <p class="card-text card-text-custom">Should already have completed the beginner skate park
                         lessons and have been
@@ -339,7 +356,8 @@
 
             <div class="card my-2 p-2 d-inline-block  lesson-card">
                 <div class="card-body">
-                    <h5 class="card-title">Adult Skate Park</h5>
+                    <h5 class="card-title lesson-card-title">Adult Skate Park</h5>
+                    <h5 class="card-title lesson-card-price">$35</h5>
                     <hr class="hr-tertiary">
                     <p class="card-text">This class is suited to all adults. These lessons are tailored based on our
                         roller skaters as a group and as individuals. You can learn the basics of dropping-in,
@@ -354,7 +372,8 @@
 
             <div class="card my-2 p-2 d-inline-block  lesson-card">
                 <div class="card-body">
-                    <h5 class="card-title">Private Lessons</h5>
+                    <h5 class="card-title lesson-card-title">Private Lessons</h5>
+                    <h5 class="card-title lesson-card-price">$40 Netball Court <br> $45 Skatepark</h5>
                     <hr class="hr-tertiary">
                     <p class="card-text">We offer private lessons for both netball court skaters and skate park
                         skaters. If you wish to attend a private skatepark lesson make sure to have attended our
@@ -444,13 +463,18 @@
                 <p class="text-bigger">We run the majority of our group lessons on Sunday mornings each week, private
                     lessons
                     can be booked for other days throughout the week to cater to you! If any of the above lessons sound
-                    good to you then shoot us a message through Facebook as that is our main booking platform or you can
-                    an email to us at:
-                    <br>
+                    good to you then shoot us a message through Facebook by hitting the button below. <br> <br>
+                    Or you can email to us at:
+
                     <a id="contact-email"
                         href="mailto:Wobblywheels.lessons@gmail.com">wobblywheels.lessons@gmail.com</a>
                     <br>
                     <br>
+                <div class="d-flex">
+                    <a href="https://fb.com/book/wobblywheels.lessons/" class="my-3 w-70 btn btn-main mx-auto"> Book
+                        Now!</a>
+                </div>
+
 
                 </p>
                 <hr class="hr-tertiary">

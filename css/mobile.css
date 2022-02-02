@@ -3,6 +3,18 @@
     display: block;
 }
 
+/* Showcase */
+#showcase{
+    justify-content: start;
+}
+
+#showcase .container{
+    margin-top: 2rem;
+}
+
+#showcase h1{
+    font-size: 3rem;
+}
 
 /* Nav stuff */
 #mobile-brand{

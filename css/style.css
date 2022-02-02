@@ -96,12 +96,42 @@
 }
 
 /* ====================== Showcase stuff ====================== */
+#showcase{
+    bottom: 0;
+    height: 75vh;
+    background-size: cover;
+    background-position: center top;
+    background-color: var(--main-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
+}
 
 #showcase-banner{
     bottom: 0;
     width: 100%;
     
+}
+
+#showcase .container{
+    text-align: center;
+}
+#showcase h1{
+    font-size: 5rem;
+}
+
+
+#showcase h1,
+#showcase h2{
+    color: var(--main-light);
+    text-shadow: 2px 2px 3px #bc6b34;
+}
+
+
+
+#header-and-showcase-container{
+    background-color: var(--main-primary-light);
 }
 
 /* ==================== Horizontal rules ====================*/
@@ -181,6 +211,13 @@
 .lesson-card:hover~.lesson-card{
     transform: translateX(150px);
 } 
+
+.lesson-card-title{
+    height: 3rem;
+}
+.lesson-card-price{
+    height: 3rem;
+}
 
 
 

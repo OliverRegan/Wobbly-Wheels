@@ -1,5 +1,6 @@
 // Variable definitions
-let showcase = document.getElementById('showcase-banner');
+let showcase = document.getElementById('showcase');
+// let showcase = document.getElementById('showcase-banner');
 
 // document load events
 function docLoadEvents() {
@@ -17,9 +18,9 @@ function checkSize() {
 
     // Check doc width and adjust banner accordingly
     if (width <= 930) {
-        showcase.src = './img/Group_Orange.jpg'
+        showcase.style.backgroundImage = 'url("./img/Group_Orange.jpg")';
     } else if (width > 930) {
-        showcase.src = './img/Banner_Large_NoLogo.png';
+        showcase.style.backgroundImage = 'url("./img/Banner_Large_NoLogo.png")';
     }
 
 }
