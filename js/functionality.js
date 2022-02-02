@@ -16,9 +16,9 @@ function checkSize() {
     let width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
     // Check doc width and adjust banner accordingly
-    if (width <= 768) {
+    if (width <= 930) {
         showcase.src = './img/Group_Orange.jpg'
-    } else if (width > 768) {
+    } else if (width > 930) {
         showcase.src = './img/Banner_Large_NoLogo.png';
     }
 

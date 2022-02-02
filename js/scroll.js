@@ -2,9 +2,9 @@
 let nav = document.getElementById('nav-bar');
 let meetTheTeam = document.getElementById('meet-the-team');
 let ageGroups = document.getElementById('age-groups');
-let classes = document.getElementById('classes');
+let classes = document.getElementById('lessons');
 let aboutUs = document.getElementById('about-us');
-let contactUs = document.getElementById('contact-us');
+let contactUs = document.getElementById('contact-&-booking');
 
 // Scroll to top button
 let scrollTop = document.getElementById('scroll-top');

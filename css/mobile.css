@@ -25,7 +25,9 @@
     display: block;
 }
 
-
+#socials{
+    width: 100%;
+}
 /* footer stuff */
 .socials{
     width: 85%;

@@ -202,6 +202,10 @@
 }
 
 
+/* Contact */
+#socials{
+    width: 40%;
+}
 
 
 
@@ -224,3 +228,6 @@
 }
 
 
+#contact-email{
+    font-size: 1rem;
+}
