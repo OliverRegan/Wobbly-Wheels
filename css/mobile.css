@@ -19,6 +19,8 @@
 /* Nav stuff */
 #mobile-brand{
     display: inline-block;
+    height: 100%;
+    margin: auto 0;
 }
 
 #top-brand{
@@ -164,4 +166,9 @@
 }
 .lesson-card{
     height: auto;
+}
+
+
+#contact-email{
+    font-size: 1rem;
 }

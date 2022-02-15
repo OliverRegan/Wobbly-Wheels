@@ -20,7 +20,7 @@ function checkSize() {
     if (width <= 930) {
         showcase.style.backgroundImage = 'url("./img/Group_Orange.jpg")';
     } else if (width > 930) {
-        showcase.style.backgroundImage = 'url("./img/Banner_Large_NoLogo.png")';
+        showcase.style.backgroundImage = 'url("./img/Banner/Learn_To_Roller_Skate_Brisbane.png")';
     }
 
 }

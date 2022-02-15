@@ -114,9 +114,15 @@
     
 }
 
-#showcase .container{
+.showcase-text{
+    width: 100%;
     text-align: center;
+    justify-content: center;
+    background-color: rgba(231,154,125,0.7);
+    border-top: var(--main-light) 5px solid;
+    border-bottom: var(--main-light) 5px solid;
 }
+
 #showcase h1{
     font-size: 5rem;
 }
@@ -266,5 +272,9 @@
 
 
 #contact-email{
-    font-size: 1rem;
+    color: var(--main-primary);
+}
+
+#book-btn{
+    background-color: var(--primary-hover);
 }
