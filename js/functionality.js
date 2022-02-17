@@ -18,7 +18,7 @@ function checkSize() {
 
     // Check doc width and adjust banner accordingly
     if (width <= 930) {
-        showcase.style.backgroundImage = 'url("./img/Group_Orange.jpg")';
+        showcase.style.backgroundImage = 'url("./img/Other/Group_Orange.jpg")';
     } else if (width > 930) {
         showcase.style.backgroundImage = 'url("./img/Banner/Learn_To_Roller_Skate_Brisbane.png")';
     }

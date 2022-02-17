@@ -5,7 +5,7 @@
 
 /* Showcase */
 #showcase{
-    justify-content: start;
+    justify-content: end;
 }
 
 #showcase .container{
