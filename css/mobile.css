@@ -2,6 +2,12 @@
 .mobile-hr{
     display: block;
 }
+.mobile-show{
+    display: block;
+}
+.mobile-hide{
+    display: none;
+}
 
 /* Showcase */
 #showcase{
@@ -26,6 +32,13 @@
 #top-brand{
     width: 320px;
     height: 135px;
+}
+
+.desktop-logo{
+    display: none;
+}
+.mobile-logo{
+    display: block;
 }
 
 #brand-bar{
@@ -57,6 +70,11 @@
 .card-title-wrapper h3,
 .card-title-wrapper h4{
    text-align: center;
+}
+
+.photo-text{
+    display: flex;
+    flex-direction: column;
 }
 
 /* Meet the team */
@@ -113,7 +131,11 @@
 }
 
 
-
+/* Skatepark */
+#skatepark-img{
+    display: flex;
+    flex-direction: column;
+}
 
 
 /* Safety */

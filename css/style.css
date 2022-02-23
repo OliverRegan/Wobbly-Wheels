@@ -47,6 +47,12 @@
     background-color: var(--main-tertiary);
     transition: var(--fast-transition);
 }
+.mobile-show{
+    display: none;
+}
+.mobile-hide{
+    display: block;
+}
 
 /*==================== Nav list ====================*/
 
@@ -62,8 +68,16 @@
 }
 
 #top-brand{
-    width: 548px;
-    height: 232px;
+    /* width: 548px;
+    height: 232px; */
+    max-width: 17rem;
+}
+
+.mobile-logo{
+    display: none;
+}
+.desktop-logo{
+    display: inline-block;
 }
 
 .nav-list{
@@ -141,7 +155,7 @@
 }
 
 .intro-text{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
 /* ==================== Horizontal rules ====================*/
@@ -173,9 +187,18 @@
 }
 
 .meet-card-img{
-    width: 45%;
+    width: 85%;
     max-width: 436px;
     
+}
+
+.photo-text{
+    display: flex;
+    flex-direction: row;
+}
+
+.text-image{
+    max-width: 20rem;
 }
 
 /* Meet the team */
@@ -201,16 +224,17 @@
 
 
 .lesson-card{
-    max-width: 20%;
+    max-width: 30%;
+    min-width: 30%;
 
-    box-shadow: -1rem 0 3rem #333, 5px 5px 5px rgba(0,0,0,0.4);
+    box-shadow: -1rem 0 2rem #333, 5px 5px 5px rgba(0,0,0,0.4);
 
     transition: 0.2s;
 }
 
 /* Animations for lesson cards */
 .lesson-card:not(:first-child){
-    margin-left: -150px;
+    margin-left: -200px;
 }
 
 .lesson-card:hover{
@@ -219,17 +243,22 @@
 }
 
 .lesson-card:hover~.lesson-card{
-    transform: translateX(150px);
+    transform: translateX(200px);
 } 
 
 .lesson-card-title{
     height: 3rem;
+
 }
 .lesson-card-price{
-    height: 3rem;
+    height: 2.5rem;
 }
 
-
+/* Skatepark section */
+#skatepark-img{
+    display: flex;
+    flex-direction: row;
+}
 
 /* Safety */
 #safety-container{
@@ -282,4 +311,5 @@
 .custom-btn{
     background-color: var(--main-secondary);
     color: var(--main-light);
+    min-width: 10rem;
 }
