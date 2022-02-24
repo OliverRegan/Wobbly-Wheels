@@ -199,3 +199,19 @@
 #contact-email{
     font-size: 1rem;
 }
+
+/* Triple images */
+.triple-img{
+    flex-direction: column;
+}
+
+/* Card titles */
+.card-title-custom{
+    font-size: 2rem;
+}
+
+.intro-text{
+    font-size: 1.2rem;
+    padding: 0 1rem;
+    margin: 2rem 0;
+}

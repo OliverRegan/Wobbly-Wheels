@@ -201,6 +201,12 @@
     max-width: 20rem;
 }
 
+.intro-text{
+    font-size: 1.7rem;
+    padding: 0 1rem;
+    margin: 2rem 0;
+}
+
 /* Meet the team */
 #meet-the-team-container{
     display: flex;
@@ -331,4 +337,18 @@
 }
 #book-btn:hover{
     color: var(--main-primary);
+}
+
+
+/* Triple image containers */
+.triple-img{
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* Card titles */
+.card-title-custom{
+    font-weight: lighter;
+    font-size: 3rem;
 }
