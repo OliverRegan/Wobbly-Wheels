@@ -137,6 +137,11 @@
     flex-direction: column;
 }
 
+/* reviews */
+
+#reviews{
+    flex-direction: column;
+}
 
 /* Safety */
 #safety-container{
@@ -155,7 +160,7 @@
     flex-direction: column-reverse;
 }
 #safety-img img{
-    width: 100%;
+    width: 80%;
 }
 
 

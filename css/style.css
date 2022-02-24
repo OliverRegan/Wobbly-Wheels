@@ -224,8 +224,8 @@
 
 
 .lesson-card{
-    max-width: 30%;
-    min-width: 30%;
+    max-width: 20%;
+    min-width: 20%;
 
     box-shadow: -1rem 0 2rem #333, 5px 5px 5px rgba(0,0,0,0.4);
 
@@ -255,10 +255,18 @@
 }
 
 /* Skatepark section */
-#skatepark-img{
+#triple-img{
     display: flex;
     flex-direction: row;
 }
+
+/* Reviews */
+#reviews{
+    display: flex;
+    flex-direction: row;
+}
+
+
 
 /* Safety */
 #safety-container{
@@ -273,7 +281,8 @@
 }
 
 #safety-img img{
-    width: 50%;
+    min-width: 20rem;
+    
     
 }
 
@@ -283,7 +292,10 @@
     width: 40%;
 }
 
-
+/* Join */
+#join-img{
+  
+}
 
 /* gallery */
 
