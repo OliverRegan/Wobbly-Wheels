@@ -325,3 +325,10 @@
     color: var(--main-light);
     min-width: 10rem;
 }
+
+#book-btn{
+    font-size: 1.5rem;
+}
+#book-btn:hover{
+    color: var(--main-primary);
+}
